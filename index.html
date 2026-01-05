@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+
+    <link rel="stylesheet" href="./css/Happy.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-animation-container">
+      <div class="bg-shape shape-1"></div>
+      <div class="bg-shape shape-2"></div>
+    </div>
+
+    <section id="landing-page" class="active-section">
+      <div class="glass-card">
+        <h1 class="title">Happy Birthday!</h1>
+        <div class="profile-container">
+          <img src="/assets/noFilter.png" alt="Profile" class="profile-img" />
+        </div>
+        <p class="message">
+          HELLO, <strong>HONEY</strong>!<br />
+          Selamat ulang tahun Honey, Semoga di usia yang baru ini, Allah SWT
+          senantiasa melimpahkan rezeki, kesehatan, kebahagiaan, dan keberkahan
+          dalam hidupmu. Tetap semangat dan terus berusaha menjadi pribadi yang
+          lebih baik..
+        </p>
+        <button class="btn-main" onclick="bukaGaleri()">Buka Kado 🎁</button>
+      </div>
+    </section>
+
+    <section id="gallery-page" class="hidden-section">
+      <div class="container">
+        <h1 class="gallery-title">Our Memories ✨</h1>
+
+        <div class="photo-grid">
+          <div class="photo-card" style="--i: 1">
+            <img src="./assets/image1.png" alt="Foto 1" />
+            <div class="overlay"><span>Dansa 💃🏻</span></div>
+          </div>
+          <div class="photo-card" style="--i: 2">
+            <img src="./assets/image2.png" alt="Foto 2" />
+            <div class="overlay"><span>Bersama 💖</span></div>
+          </div>
+          <div class="photo-card" style="--i: 3">
+            <img src="./assets/image3.png" alt="Foto 3" />
+            <div class="overlay"><span>Suasana 🌅</span></div>
+          </div>
+          <div class="photo-card" style="--i: 4">
+            <img src="./assets/image4.png" alt="Foto 4" />
+            <div class="overlay"><span>Berteduh🏙️</span></div>
+          </div>
+          <div class="photo-card" style="--i: 5">
+            <img src="./assets/image5.png" alt="Foto 5" />
+            <div class="overlay"><span>Kembang Api 🎆</span></div>
+          </div>
+          <div class="photo-card" style="--i: 6">
+            <img src="./assets/image6.png" alt="Foto 6" />
+            <div class="overlay"><span>Senang ❤️</span></div>
+          </div>
+          <div class="photo-card" style="--i: 7">
+            <img src="./assets/image7.png" alt="Foto 7" />
+            <div class="overlay"><span>Momen Lucu 🍭</span></div>
+          </div>
+          <div class="photo-card" style="--i: 8">
+            <img src="./assets/image7.2.png" alt="Foto 8" />
+            <div class="overlay"><span>Party Time 🥳</span></div>
+          </div>
+          <div class="photo-card" style="--i: 8">
+            <img src="./assets/image8.png" alt="Foto 8" />
+            <div class="overlay"><span>Ketenangan ☂️</span></div>
+          </div>
+          <div class="photo-card" style="--i: 8">
+            <img src="./assets/image9.png" alt="Foto 8" />
+            <div class="overlay"><span>Kasih Sayang 💖</span></div>
+          </div>
+          <div class="photo-card" style="--i: 8">
+            <img src="./assets/image10.png" alt="Foto 8" />
+            <div class="overlay"><span>Makan Bersama 🍜</span></div>
+          </div>
+          <div class="photo-card" style="--i: 8">
+            <img src="./assets/image11.png" alt="Foto 8" />
+            <div class="overlay"><span>Menemani ☀️</span></div>
+          </div>
+        </div>
+
+        <button class="btn-back" onclick="location.reload()">
+          ↺ Ulangi Lagi
+        </button>
+      </div>
+    </section>
+
+    <div id="image-modal" class="modal-container">
+      <span class="close-btn" onclick="tutupModal()">&times;</span>
+      <img class="modal-content" id="full-image" />
+      <div id="caption-text"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="./js/Birth.js"></script>
+  </body>
+</html>
